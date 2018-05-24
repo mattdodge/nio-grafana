@@ -1,0 +1,3 @@
+# Ignore the local data directories for elastic and grafana
+es-data
+grafana-data

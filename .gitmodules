@@ -1,0 +1,15 @@
+[submodule "nio-project/blocks/modifier"]
+	path = nio-project/blocks/modifier
+	url = git://github.com/nio-blocks/modifier.git
+[submodule "nio-project/blocks/simulator"]
+	path = nio-project/blocks/simulator
+	url = git://github.com/nio-blocks/simulator.git
+[submodule "nio-project/blocks/elastic_search"]
+	path = nio-project/blocks/elastic_search
+	url = git://github.com/nio-blocks/elastic_search.git
+[submodule "nio-project/blocks/http_requests"]
+	path = nio-project/blocks/http_requests
+	url = git://github.com/nio-blocks/http_requests.git
+[submodule "nio-project/blocks/logger"]
+	path = nio-project/blocks/logger
+	url = git://github.com/nio-blocks/logger.git

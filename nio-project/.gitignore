@@ -1,0 +1,11 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+.cache
+
+# nio stuff
+logs/
+etc/persist/
+nio.err
+etc/api_key.cfg
+variables.conf

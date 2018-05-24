@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  grafana:
+    image: grafana/grafana:5.1.0
+    ports:
+      - 3000:3000
+    volumes:
+      - ./elastic.datasource.yml:/etc/grafana/provisioning/datasources/elastic.datasource.yml
+      - ./grafana.dashboard.provisioner.yml:/etc/grafana/provisioning/dashboards/default.yml
+      - ./grafana.dashboard.json:/var/lib/grafana/dashboards/dana_point_weather.json
+      - ./grafana-data:/var/lib/grafana
+    environment:
+      GF_INSTALL_PLUGINS: 
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.2.4
+    environment:
+      - discovery.type=single-node
+    ports:
+      - 9200:9200
+    volumes:
+      - ./es-data:/usr/share/elasticsearch/data

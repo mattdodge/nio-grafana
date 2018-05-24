@@ -1,0 +1,16 @@
+# Put your individual and secret environment variables in here
+
+[user_defined]
+
+# Pubkeeper Connection Settings
+PK_HOST= [ ENTER PUBKEEPER HOST HERE
+PK_TOKEN= [ ENTER PUBKEEPER TOKEN HERE
+WS_HOST= [ ENTER WEBSOCKET HOST HERE
+
+# Weather API Credentials
+WEATHER_APP_ID= [ ENTER WEATHER APP ID HERE
+WEATHER_ZIP_CODE= [ ENTER ZIP CODE HERE ]
+
+# ElasticSearch Configuration
+ES_HOST=127.0.0.1
+ES_PORT=9200
