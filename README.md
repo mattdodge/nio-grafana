@@ -1,6 +1,6 @@
 # nio and Grafana
 
-A package containing a nio instance, Elasticsearch database, and Grafana dashboard that you can use to visualize your nio data.
+A package containing a nio instance, Elasticsearch database, and Grafana dashboard that you can use to visualize your nio data. Check out the blog post detailing these steps in far more detail over on [the niolabs blog](https://niolabs.com/blog/visualize-your-data-with-grafana).
 
 ## Requirements
 1. [docker-compose](https://docs.docker.com/compose/install/)
