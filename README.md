@@ -85,3 +85,11 @@ pip install -r requirements.txt
 If you see log messages/warnings indicating Pubkeeper connection problems it may be ok. As long as you see `Authenticated to Pubkeeper` at some point you are probably good. The other warnings are caused by publishers trying to send messages before the PK connection is established. To make the Pubkeeper client behave more synchronously add `async=False` to the `[pubkeeper_client]` section of your `nio.conf` file.
 
 If you still see connection errors, make sure your `PK_HOST` and `PK_TOKEN` variables are set correctly in `variables.conf`. Also make sure you're including both files when connecting (`niod -s nio.conf -s variables.conf` - the order matters!)
+
+### Dashboards are Empty
+Make sure data is getting in to your Elasticsearch database first. You can hit this URL from your browser to see if there are records: [http://localhost:9200/nio/_search](http://localhost:9200/nio/_search). Make sure there are at least a few data points to populate the graphs with.
+
+If there is data there then check the Grafana dashboard or the Grafana docker container logs to see if there are any errors reported:
+```bash
+docker-compose logs grafana
+```
