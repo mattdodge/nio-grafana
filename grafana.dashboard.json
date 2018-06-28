@@ -97,7 +97,7 @@
               "id": "2",
               "settings": {
                 "interval": "auto",
-                "min_doc_count": 0,
+                "min_doc_count": 1,
                 "trimEdges": 0
               },
               "type": "date_histogram"
@@ -224,7 +224,7 @@
               "id": "2",
               "settings": {
                 "interval": "auto",
-                "min_doc_count": 0,
+                "min_doc_count": 1,
                 "trimEdges": 0
               },
               "type": "date_histogram"
@@ -324,7 +324,7 @@
               "id": "2",
               "settings": {
                 "interval": "auto",
-                "min_doc_count": 0,
+                "min_doc_count": 1,
                 "trimEdges": 0
               },
               "type": "date_histogram"
@@ -424,7 +424,7 @@
               "id": "2",
               "settings": {
                 "interval": "auto",
-                "min_doc_count": 0,
+                "min_doc_count": 1,
                 "trimEdges": 0
               },
               "type": "date_histogram"
